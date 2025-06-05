@@ -5,127 +5,129 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Só Verde Jardinagem</title>
   <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
     body {
       font-family: Arial, sans-serif;
-      margin: 0;
-      padding: 0;
-      line-height: 1.6;
-      background-color: #f5f5f5;
+      background-color: #f0f5f0;
       color: #333;
     }
+
     header {
-      background-color: #2e7d32;
+      background-color: #27d32e;
       color: white;
-      padding: 20px;
+      padding: 30px 20px;
       text-align: center;
     }
+
     header h1 {
-      margin: 0;
-      font-size: 2em;
+      font-size: 2.5em;
     }
+
     nav {
-      background-color: #1b5e20;
-      display: flex;
-      justify-content: center;
+      background-color: #1b8e1f;
+      text-align: center;
       padding: 10px 0;
     }
+
     nav a {
       color: white;
-      margin: 0 15px;
       text-decoration: none;
+      margin: 0 15px;
       font-weight: bold;
     }
-    nav a:hover {
-      text-decoration: underline;
-    }
+
     section {
-      padding: 30px 20px;
-      max-width: 900px;
+      padding: 40px 20px;
+      max-width: 1000px;
       margin: auto;
     }
-    h2 {
-      color: #2e7d32;
+
+    .galeria {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
     }
-    .servicos ul {
-      list-style: none;
-      padding: 0;
+
+    .galeria img {
+      width: 100%;
+      border-radius: 10px;
+      box-shadow: 0 0 10px #aaa;
     }
-    .servicos li {
-      background: #e8f5e9;
-      margin-bottom: 10px;
-      padding: 10px;
-      border-left: 5px solid #2e7d32;
-    }
+
     footer {
-      background-color: #2e7d32;
+      background-color: #1b8e1f;
       color: white;
       text-align: center;
-      padding: 15px 10px;
+      padding: 20px;
+      margin-top: 40px;
     }
-    .whatsapp {
-      position: fixed;
-      bottom: 20px;
-      right: 20px;
+
+    a.botao-whatsapp {
       background-color: #25d366;
+      padding: 10px 20px;
       color: white;
-      padding: 15px;
-      border-radius: 50%;
-      font-size: 20px;
-      text-align: center;
       text-decoration: none;
-      box-shadow: 2px 2px 8px rgba(0,0,0,0.3);
-    }
-    @media (max-width: 600px) {
-      nav {
-        flex-direction: column;
-      }
-      nav a {
-        margin: 10px 0;
-      }
+      border-radius: 5px;
+      font-weight: bold;
+      display: inline-block;
+      margin-top: 15px;
     }
   </style>
 </head>
 <body>
-
   <header>
     <h1>Só Verde Jardinagem</h1>
-    <p>Seu jardim bonito e bem cuidado o ano inteiro. Atendemos com rapidez, qualidade e preço justo!</p>
+    <p>Cuidando do seu jardim com qualidade e carinho</p>
   </header>
 
   <nav>
     <a href="#sobre">Sobre</a>
     <a href="#servicos">Serviços</a>
+    <a href="#galeria">Galeria</a>
     <a href="#contato">Contato</a>
   </nav>
 
   <section id="sobre">
     <h2>Sobre Nós</h2>
-    <p>Somos uma empresa especializada em jardinagem, atendendo São Paulo Capital até o interior com serviços de qualidade, pontualidade e total cuidado com seu espaço verde.</p>
-    <p><strong>CNPJ:</strong> 31.136.733/0001-81</p>
+    <p>Somos uma empresa especializada em poda e manutenção de jardins. Atendemos residências, comércios e condomínios com dedicação e profissionalismo. A Só Verde Jardinagem está pronta para transformar seu espaço verde.</p>
   </section>
 
-  <section id="servicos" class="servicos">
-    <h2>Nossos Serviços</h2>
+  <section id="servicos">
+    <h2>Serviços</h2>
     <ul>
-      <li>Poda de árvores e arbustos</li>
-      <li>Manutenção de jardins</li>
-      <li>Adubação e controle de pragas</li>
-      <li>Paisagismo</li>
+      <li>✅ Poda de árvores e arbustos</li>
+      <li>✅ Corte de grama</li>
+      <li>✅ Limpeza de jardins</li>
+      <li>✅ Adubação e controle de pragas</li>
+      <li>✅ Paisagismo simples</li>
     </ul>
   </section>
 
+  <section id="galeria">
+    <h2>Galeria</h2>
+    <div class="galeria">
+      <img src="https://via.placeholder.com/400x300?text=Antes+e+Depois" alt="Antes e depois">
+      <img src="https://via.placeholder.com/400x300?text=Jardim+1" alt="Jardim bonito">
+      <img src="https://via.placeholder.com/400x300?text=Poda+em+ação" alt="Poda">
+    </div>
+  </section>
+
   <section id="contato">
-    <h2>Fale Conosco</h2>
-    <p>Entre em contato agora mesmo pelo WhatsApp e peça seu orçamento gratuito!</p>
-    <p><strong>WhatsApp:</strong> <a href="https://wa.me/5511966028984" target="_blank">(11) 96602-8984</a></p>
-    <p>Atendemos em toda a região de São Paulo capital e interior.</p>
+    <h2>Contato</h2>
+    <p>Fale conosco para orçamentos e agendamentos:</p>
+    <p>📞 WhatsApp: (00) 00000-0000</p>
+    <p>📍 Cidade/Estado</p>
+    <p>📸 Instagram: @so.verde.jardinagem</p>
+    <a class="botao-whatsapp" href="https://wa.me/5500000000000" target="_blank">Chamar no WhatsApp</a>
   </section>
 
   <footer>
-    <p>&copy; 2025 Só Verde Jardinagem - Todos os direitos reservados.</p>
+    <p>&copy; 2025 Só Verde Jardinagem. Todos os direitos reservados.</p>
   </footer>
-
-  <a class="whatsapp" href="https://wa.me/5511966028984" target="_blank">💬</a>
-
 </body>
 </html>
