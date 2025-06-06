@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,79 +10,107 @@
             background-color: #f8fff4;
             margin: 0;
             padding: 0;
+            color: #333;
         }
+
         header {
-            background-color: #228B22;
+            background-color: #2e7d32;
             color: white;
             padding: 20px;
             text-align: center;
         }
+
+        h1 {
+            margin: 0;
+        }
+
         section {
             padding: 20px;
         }
-        .servicos li {
-            margin-bottom: 8px;
+
+        h2 {
+            color: #2e7d32;
         }
+
+        ul {
+            list-style: none;
+            padding-left: 0;
+        }
+
+        ul li::before {
+            content: "✅ ";
+        }
+
+        .galeria {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
         .galeria img {
-            width: 30%;
-            margin: 10px;
-            border-radius: 8px;
-            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+            width: 300px;
+            height: auto;
         }
+
         .contato {
-            background-color: #eee;
-            padding: 20px;
-            text-align: center;
+            margin-top: 30px;
         }
-        .whatsapp-button {
-            background-color: #25D366;
+
+        .contato a {
+            display: inline-block;
+            background-color: #25d366;
             color: white;
-            padding: 12px 24px;
-            border: none;
-            border-radius: 5px;
+            padding: 10px 20px;
+            border-radius: 8px;
             text-decoration: none;
-            font-size: 16px;
+            font-weight: bold;
         }
+
         footer {
-            background-color: #228B22;
+            background-color: #2e7d32;
             color: white;
             text-align: center;
             padding: 10px;
         }
+
     </style>
 </head>
 <body>
 
 <header>
     <h1>Só Verde Jardinagem</h1>
-    <p>Seu jardim em boas mãos</p>
+    <p>Cuidando do seu jardim com excelência!</p>
 </header>
 
 <section>
     <h2>Serviços</h2>
-    <ul class="servicos">
-        <li>✅ Poda de árvores e arbustos</li>
-        <li>✅ Corte de grama</li>
-        <li>✅ Limpeza de jardins</li>
-        <li>✅ Adubação e controle de pragas</li>
-        <li>✅ Paisagismo simples</li>
+    <ul>
+        <li>Poda de árvores e arbustos</li>
+        <li>Corte de grama</li>
+        <li>Limpeza de jardins</li>
+        <li>Adubação e controle de pragas</li>
+        <li>Paisagismo simples</li>
     </ul>
 </section>
 
 <section>
     <h2>Galeria</h2>
     <div class="galeria">
-        <img src="https://cdn.pixabay.com/photo/2021/09/28/11/15/gardener-6663704_1280.jpg" alt="Jardineiro trabalhando">
-        <img src="https://cdn.pixabay.com/photo/2017/05/10/15/01/garden-2309649_1280.jpg" alt="Jardim bonito">
-        <img src="https://cdn.pixabay.com/photo/2016/04/01/10/16/lawn-mower-1307691_1280.jpg" alt="Corte de grama">
+        <img src="https://cdn.pixabay.com/photo/2021/05/11/17/15/gardener-6246470_1280.jpg" alt="Antes e depois">
+        <img src="https://cdn.pixabay.com/photo/2016/07/23/00/01/garden-1536740_1280.jpg" alt="Jardim bonito">
+        <img src="https://cdn.pixabay.com/photo/2016/06/18/17/42/gardening-1464195_1280.jpg" alt="Poda">
     </div>
 </section>
 
 <section class="contato">
     <h2>Contato</h2>
-    <p>📞 WhatsApp: <strong>(11) 96602-8984</strong></p>
-    <p>📍 Araçariguama, São Paulo</p>
-    <a class="whatsapp-button" href="https://wa.me/5511966028984" target="_blank">Chamar no WhatsApp</a>
+    <p>Fale conosco para orçamentos e agendamentos:</p>
+    <p>📞 WhatsApp: (11) 96602-8984</p>
+    <p>📍 Araçariguama / São Paulo</p>
+    <a href="https://wa.me/5511966028984" target="_blank">Chamar no WhatsApp</a>
 </section>
 
 <footer>
